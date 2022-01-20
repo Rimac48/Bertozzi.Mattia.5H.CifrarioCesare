@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrario di cesare</title>
+    <script src="script.js"> </script>
+
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+    <div id="Titolo">Cifrario di Cesare</div>
+    <div id="Titolo">by Mattia Bertozzi 5H</div>
+
+    <form id="FormDati" name="FormDati">
+        <table id="TableDati">
+            <tr>
+                <td>
+                    <input type="text" name="Parola" placeholder="Inserisci Parola">
+                </td>
+                <td>
+                    <input type="text" name="Chiave" placeholder="Inserisci Chiave">
+                </td>
+                <td>
+                    <button class="cripta" type="button" onclick="Cripta()">Cripta</button>
+                </td>
+                <td>
+                    <p name="risCriptazione" id="risCriptazione">Messaggio Criptato</p>
+                </td>
+                <td>
+                    <button class="cripta" type="button" onclick="DeCripta()">DeCripta</button>
+                </td>
+                <td>
+                    <p id="risDeCriptazione">Messaggio DeCriptato</p>
+                </td>
+                <td>
+                    <button class="reset" type="button" onclick="Pulisci()"><span class="text">Reset</span><span>Sicuro?</span></button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
